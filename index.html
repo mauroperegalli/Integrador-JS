@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+    <title>iStore</title>
+</head>
+<body>
+    <main class="main-container">
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="./assets/Logo iphone.png" alt="logo">
+            </div>
+            <div class="navbar__cart-icon">
+                <div class="home-icon-container">
+                    <i class="fa-solid fa-house"></i>
+
+                </div>
+                <div class="navbar__cart">
+                    <i id="cartt" class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="user">
+                  <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                   
+                </div>
+            </div>
+
+            <!-- Menu Hamburguesa -->
+            <div class="menu-btn nav-toggle">
+                <div></div>
+            </div>
+            </header>
+        </nav>
+        
+        <ul class="nav-menu">
+            <li ><a class="nav-menu-item active-menu-item" href="#header">Home</a></li>
+            <li><a class="nav-menu-item" data-nav="header" href="login.html">Mi cuenta</a></li>
+            <li><a class="nav-menu-item" data-nav="populares" href="#populares">Populares</a></li>
+            <li><a class="nav-menu-item" data-nav="categorias" href="#categorias">Categorias</a></li>
+            <li><a class="nav-menu-item" data-nav="about" href="#about">About</a></li>
+
+        </ul>
+
+        <!-- Carrito -->
+        <div class="cart">
+            <span class="close" id="close">x</span>
+            <h2>Tus Productos</h2>
+            <div class="cart-container">
+                
+            </div>
+            <div class="cart-subtotal">
+                <div class="sub">
+                    <p>Subtotal:</p>
+                    <span class="sub-total">$0.00</span>
+                </div>
+                <div class="envio">
+                    <p>Envio:</p>
+                    <span class="free">Gratis</span>
+                </div>
+            </div>
+            <span class="divider"></span>
+            <div class="cart-total">
+                <p>Total:</p>
+                <span class="total">$0.00</span>
+            </div>
+            <div class="btn-cart">
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-delete">Vaciar carrito</button>
+            </div>
+
+              <div class="show-more">
+                <a class="cart-link" href="#categorias">Ver más productos</a>
+              </div>
+            </div>
+            <div class="overlay"></div> 
+
+            <section class="container-info"> 
+            <div class="info">
+                <h1>iStore</h1>
+                <p>Equipos y accesorios apple originales</p>
+            </div>
+        </section>
+        <section class="container-ofertas" id="populares">
+            <h2 id="title-ofertas">Ofertas del dia</h2>
+            <div class="cards-oferta"> 
+
+            </div>
+        </section>
+        <section class="container-categories" id="categorias">
+            <h2 id="title-ofertas">Categorias</h2>
+            <div class="container-cards-category">
+                <div class="category active">
+                    <img src="./assets/filter-icons/populares.png" alt="Populares">
+                    <h3>Populares</h3>
+                </div>
+                <div class="category" data-category="iphone">
+                    <img src="./assets/filter-icons/iphone.png" alt="iPhone">
+                    <h3>iPhone</h3>
+                </div>
+                <div class="category" data-category="ipad">
+                    <img src="./assets/filter-icons/ipad.png" alt="iPad">
+                    <h3>iPad</h3>
+                </div>
+                <div class="category" data-category="macbook">
+                    <img src="./assets/filter-icons/macbook.png" alt="MacBook">
+                    <h3>MacBook</h3>
+                </div>
+                <div class="category" data-category="watch">
+                    <img src="./assets/filter-icons/watch.png" alt="Watch">
+                    <h3>Watch</h3>
+                </div>
+                <div class="category" data-category="accesorios">
+                    <img src="./assets/filter-icons/accesorios.png" alt="Accesorios">
+                    <h3>Accesorios</h3>
+                </div>
+            </div>
+
+            <div class="container-products">
+                <h2 id="title">Populares</h2>
+                <div class="container-cards-product">
+    
+                </div>
+            </div>
+        </section>
+        <footer id="about">
+            <div class="footer-text">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="nosotros">
+                <p>Mauro Elias Peregalli</p>
+            </div>
+        </footer>
+        <div class="add-modal"></div>
+    </main>    
+    
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
